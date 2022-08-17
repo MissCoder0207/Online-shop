@@ -15,7 +15,8 @@ class ContactModel(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = 'ContactModel'
+        verbose_name_plural = 'ContactModels'
+
     
-    # class Meta:
-    #     verbose_name = 'Contact'
-    #     verbose_name_plural = 'Nilush023323'

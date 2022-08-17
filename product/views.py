@@ -29,12 +29,11 @@ class ShopView(ListView):
 
         return qs
 
-    def get_context_data(self, *, object_list=None, **kwargs):
+    def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['category'] = CategoryModel.objects.order_by('-pk')
-        context['brand'] = BrandModul.objects.order_by('-pk')
-        context['brand'] = ProductTagModel.objects.order_by('-pk')
-
+        context['categories'] = CategoryModel.objects.order_by('-pk')
+        context['brands'] = BrandModul.objects.order_by('-pk')
+        context['tags'] = ProductTagModel.objects.order_by('-pk')
         return context
 
 

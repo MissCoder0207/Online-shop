@@ -1,5 +1,6 @@
 {% extends 'layouts/base.html'%}
 <!-- Hero Section Begin -->
+{% load i18n%}
 {% load static %}
 {% block content%}
 <section class="hero">
@@ -9,10 +10,13 @@
                 <div class="row">
                     <div class="col-xl-5 col-lg-7 col-md-8">
                         <div class="hero__text">
-                            <h6>Summer Collection</h6>
-                            <h2>Fall - Winter Collections 2030</h2>
-                            <p>A specialist label creating luxury essentials. Ethically crafted with an unwavering
-                                commitment to exceptional quality.</p>
+                            <h6>{% trans 'Summer Collection' %}</h6>
+                            <h2>{% trans 'Fall - Winter Collections 2030' %}</h2>
+                            <p>{% blocktrans %}
+                                A specialist label creating luxury essentials. Ethically crafted with an unwavering
+                                commitment to exceptional quality.
+                                {% endblocktrans %}
+                            </p>
                             <a href="{% url 'product:shop' %}" class="primary-btn" style="margin-left:-10px"">Shop now <span class="arrow_right"></span></a>
                             <div class="hero__social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -30,11 +34,14 @@
                 <div class="row">
                     <div class="col-xl-5 col-lg-7 col-md-8">
                         <div class="hero__text">
-                            <h6>Summer Collection</h6>
-                            <h2>Fall - Winter Collections 2030</h2>
-                            <p>A specialist label creating luxury essentials. Ethically crafted with an unwavering
-                                commitment to exceptional quality.</p>
-                            <a href="#" class="primary-btn">Shop now <span class="arrow_right"></span></a>
+                            <h6>{% trans 'Summer Collection' %}</h6>
+                            <h2>{% trans 'Fall - Winter Collections 2030' %}</h2>
+                            <p>{% blocktrans %}
+                                A specialist label creating luxury essentials. Ethically crafted with an unwavering
+                                commitment to exceptional quality.
+                                {% endblocktrans %}
+                            </p>
+                            <a href="#" class="primary-btn">{% trans 'Shop now' %} <span class="arrow_right"></span></a>
                             <div class="hero__social">
                                 <a href=""><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -61,8 +68,8 @@
                         <img src="{% static 'img/banner/banner-1.jpg'%}" alt="">
                     </div>
                     <div class="banner__item__text">
-                        <h2>Clothing Collections 2030</h2>
-                        <a href="#">Shop now</a>
+                        <h2>{% trans 'Clothing Collections 2030' %} </h2>
+                        <a href="#">{% trans 'Shop now' %}</a>
                     </div>
                 </div>
             </div>
@@ -72,8 +79,8 @@
                         <img src="{% static 'img/banner/banner-2.jpg'%}" alt="">
                     </div>
                     <div class="banner__item__text">
-                        <h2>Accessories</h2>
-                        <a href="#">Shop now</a>
+                        <h2>{% trans 'Accessories' %}</h2>
+                        <a href="#">{% trans 'Shop now' %}</a>
                     </div>
                 </div>
             </div>
@@ -83,8 +90,8 @@
                         <img src="{% static 'img/banner/banner-3.jpg'%}" alt="">
                     </div>
                     <div class="banner__item__text">
-                        <h2>Shoes Spring 2030</h2>
-                        <a href="#">Shop now</a>
+                        <h2>{% trans 'Shoes Spring 2030' %}</h2>
+                        <a href="#">{% trans 'Shop now' %}</a>
                     </div>
                 </div>
             </div>
@@ -99,9 +106,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="filter__controls">
-                    <li class="active" data-filter="*">Best Sellers</li>
-                    <li data-filter=".new-arrivals">New Arrivals</li>
-                    <li data-filter=".hot-sales">Hot Sales</li>
+                    <li class="active" data-filter="*">{% trans 'Best Sellers' %}</li>
+                    <li data-filter=".new-arrivals">{% trans 'New Arrivals' %}</li>
+                    <li data-filter=".hot-sales">{% trans 'Hot Sales' %}</li>
                 </ul>
             </div>
         </div>
@@ -109,16 +116,16 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="{% static 'img/product/product-1.jpg ' %}">
-                        <span class="label">New</span>
+                        <span class="label">{% trans 'New' %}</span>
                         <ul class="product__hover">
                             <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>{% trans 'Compare' %}</span></a></li>
                             <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6>Piqué Biker Jacket</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
+                        <h6>{% trans 'Piqué Biker Jacket' %}</h6>
+                        <a href="#" class="add-cart">{% trans '+ Add To Cart' %}</a>
                         <div class="rating">
                             <i class="fa fa-star-o"></i>
                             <i class="fa fa-star-o"></i>
@@ -146,13 +153,13 @@
                     <div class="product__item__pic set-bg" data-setbg="{% static 'img/product/product-2.jpg' %}">
                         <ul class="product__hover">
                             <li><a href="#"><img src="{% static 'img/icon/heart.png' %}" alt=""></a></li>
-                            <li><a href="#"><img src="{% static 'img/icon/compare.png' %}" alt=""> <span>Compare</span></a></li>
+                            <li><a href="#"><img src="{% static 'img/icon/compare.png' %}" alt=""> <span> {% trans 'Compare' %} </span></a></li>
                             <li><a href="#"><img src="{% static 'img/icon/search.png' %}" alt=""></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6>Piqué Biker Jacket</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
+                        <h6>{% trans 'Piqué Biker Jacket' %}</h6>
+                        <a href="#" class="add-cart">{% trans '+ Add To Cart' %}</a>
                         <div class="rating">
                             <i class="fa fa-star-o"></i>
                             <i class="fa fa-star-o"></i>
@@ -178,16 +185,16 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                 <div class="product__item sale">
                     <div class="product__item__pic set-bg" data-setbg="{% static 'img/product/product-3.jpg'%}">
-                        <span class="label">Sale</span>
+                        <span class="label">{% trans 'Sale' %}</span>
                         <ul class="product__hover">
                             <li><a href="#"><img src="{% static 'img/icon/heart.png' %}" alt=""></a></li>
-                            <li><a href="#"><img src="{% static 'img/icon/compare.png' %}" alt=""> <span>Compare</span></a></li>
+                            <li><a href="#"><img src="{% static 'img/icon/compare.png' %}" alt=""> <span>{% trans 'Compare' %}</span></a></li>
                             <li><a href="#"><img src="{% static 'img/icon/search.png' %}" alt=""></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6>Multi-pocket Chest Bag</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
+                        <h6>{% trans 'Multi-pocket Chest Bag' %}</h6>
+                        <a href="#" class="add-cart">{% trans '+ Add To Cart' %}</a>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -215,13 +222,13 @@
                     <div class="product__item__pic set-bg" data-setbg="{% static 'img/product/product-4.jpg'% }">
                         <ul class="product__hover">
                             <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>{% trans 'Compare' %}</span></a></li>
                             <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6>Diagonal Textured Cap</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
+                        <h6>{% trans 'Diagonal Textured Cap' %}</h6>
+                        <a href="#" class="add-cart">{% trans '+ Add To Cart' %}</a>
                         <div class="rating">
                             <i class="fa fa-star-o"></i>
                             <i class="fa fa-star-o"></i>
@@ -249,13 +256,13 @@
                     <div class="product__item__pic set-bg" data-setbg="{%static 'img/product/product-5.jpg'%}">
                         <ul class="product__hover">
                             <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>{% trans 'Compare' %}</span></a></li>
                             <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6>Lether Backpack</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
+                        <h6>{% trans 'Lether Backpack' %}</h6>
+                        <a href="#" class="add-cart">{% trans '+ Add To Cart' %}</a>
                         <div class="rating">
                             <i class="fa fa-star-o"></i>
                             <i class="fa fa-star-o"></i>
@@ -281,16 +288,16 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                 <div class="product__item sale">
                     <div class="product__item__pic set-bg" data-setbg="{% static 'img/product/product-6.jpg'%}">
-                        <span class="label">Sale</span>
+                        <span class="label">{% trans 'Sale' %}</span>
                         <ul class="product__hover">
                             <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>{% trans 'Compare' %}</span></a></li>
                             <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6>Ankle Boots</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
+                        <h6>{% trans 'Ankle Boots' %}</h6>
+                        <a href="#" class="add-cart">{% trans '+ Add To Cart' %}</a>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -318,13 +325,13 @@
                     <div class="product__item__pic set-bg" data-setbg="{% static 'img/product/product-7.jpg'%}">
                         <ul class="product__hover">
                             <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>{% trans 'Compare' %}</span></a></li>
                             <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6>T-shirt Contrast Pocket</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
+                        <h6>{% trans 'T-shirt Contrast Pocket' %}</h6>
+                        <a href="#" class="add-cart">{% trans '+ Add To Cart' %}</a>
                         <div class="rating">
                             <i class="fa fa-star-o"></i>
                             <i class="fa fa-star-o"></i>
@@ -352,13 +359,13 @@
                     <div class="product__item__pic set-bg" data-setbg="{% static 'img/product/product-8.jpg'%}">
                         <ul class="product__hover">
                             <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                            <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>{% trans 'Compare' %}</span></a></li>
                             <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6>Basic Flowing Scarf</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
+                        <h6>{% trans 'Basic Flowing Scarf' %}</h6>
+                        <a href="#" class="add-cart">{% trans '+ Add To Cart' %}</a>
                         <div class="rating">
                             <i class="fa fa-star-o"></i>
                             <i class="fa fa-star-o"></i>
@@ -392,22 +399,22 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="categories__text">
-                    <h2>Clothings Hot <br/> <span>Shoe Collection</span> <br/> Accessories</h2>
+                        <h2>Clothings Hot <br/> <span>{% trans 'Shoe Collection' %}</span> <br/>{% trans ' Accessories' %}</h2>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="categories__hot__deal">
                     <img src="img/product-sale.png" alt="">
                     <div class="hot__deal__sticker">
-                        <span>Sale Of</span>
+                        <span>{% trans 'Sale Of' %}</span>
                         <h5>$29.99</h5>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 offset-lg-1">
                 <div class="categories__deal__countdown">
-                    <span>Deal Of The Week</span>
-                    <h2>Multi-pocket Chest Bag Black</h2>
+                    <span>{% trans 'Deal Of The Week' %}</span>
+                    <h2>{% trans 'Multi-pocket Chest Bag Black' %}</h2>
                     <div class="categories__deal__countdown__timer" id="countdown">
                         <div class="cd-item">
                             <span>3</span>
@@ -426,7 +433,7 @@
                             <p>Seconds</p>
                         </div>
                     </div>
-                    <a href="#" class="primary-btn">Shop now</a>
+                    <a href="#" class="primary-btn">{% trans 'Shop now' %}</a>
                 </div>
             </div>
         </div>

@@ -41,3 +41,7 @@ class PostModel(models.Model):
     # content = models.Richtextfield
     tags = models.ForeignKey(TagModel, on_delete=models.PROTECT)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = 'PostModel'
+        verbose_name_plural = 'PostModels'

@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-17 13:51+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\djangoProject\settings.py:118
+msgid "English"
+msgstr "Inglizcha"
+
+#: .\djangoProject\settings.py:119
+msgid "Russian"
+msgstr "Ruscha"
+
+#: .\djangoProject\settings.py:120
+msgid "Uzbek"
+msgstr "O'zbek"
+
+#: .\pages\apps.py:8
+msgid "Pages"
+msgstr "Sahifalar"
+
+#: .\product\models.py:9
+msgid "name"
+msgstr "nomi"
+
+#: .\product\models.py:10 .\product\models.py:19 .\product\models.py:31
+#: .\product\models.py:48
+msgid "created_at"
+msgstr "yaratilgan_vaqti"
+
+#: .\product\models.py:18 .\product\models.py:45
+msgid "category"
+msgstr "kategoriya"
+
+#: .\product\models.py:30 .\product\models.py:46
+msgid "brand"
+msgstr "brand"
+
+#: .\product\models.py:39
+msgid "title"
+msgstr "sarlavha"
+
+#: .\product\models.py:40
+msgid "image"
+msgstr "rasm"
+
+#: .\product\models.py:43
+msgid "short_discription"
+msgstr "qisqa_ta'rif"
+
+#: .\product\models.py:47
+msgid "tags"
+msgstr "teglar"
+
+#: .\templates\index.html:13 .\templates\index.html:37
+msgid "Summer Collection"
+msgstr "Yozgi to'plam"
+
+#: .\templates\index.html:14 .\templates\index.html:38
+msgid "Fall - Winter Collections 2030"
+msgstr "Kuz-qish kolleksiyalari 2030"
+
+#: .\templates\index.html:15 .\templates\index.html:39
+msgid ""
+"\n"
+"                                A specialist label creating luxury "
+"essentials. Ethically crafted with an unwavering\n"
+"                                commitment to exceptional quality.\n"
+"                                "
+msgstr ""
+"\n"
+"Hashamatni yaratuvchi mutaxassis yorlig'iasosiy narsalar. Axloqiy jihatdan "
+"o'zgarmas bilan \n"
+"yaratilgan ajoyib sifatga sodiqlik.\n"
+
+#: .\templates\index.html:44 .\templates\index.html:72
+#: .\templates\index.html:83 .\templates\index.html:94
+#: .\templates\index.html:436
+msgid "Shop now"
+msgstr "Hozir xarid qiling"
+
+#: .\templates\index.html:71
+#, fuzzy
+#| msgid "Fall - Winter Collections 2030"
+msgid "Clothing Collections 2030"
+msgstr "Kuz-qish kolleksiyalari 2030"
+
+#: .\templates\index.html:82
+msgid "Accessories"
+msgstr "Aksessuarlar"
+
+#: .\templates\index.html:93
+msgid "Shoes Spring 2030"
+msgstr "Poyafzal bahor 2030"
+
+#: .\templates\index.html:109
+msgid "Best Sellers"
+msgstr "Eng yaxshi sotuvchilar"
+
+#: .\templates\index.html:110
+msgid "New Arrivals"
+msgstr "Yangi kelganlar"
+
+#: .\templates\index.html:111
+msgid "Hot Sales"
+msgstr "Qaynoq haridlar"
+
+#: .\templates\index.html:119
+msgid "New"
+msgstr "Yangi"
+
+#: .\templates\index.html:122 .\templates\index.html:156
+#: .\templates\index.html:191 .\templates\index.html:225
+#: .\templates\index.html:259 .\templates\index.html:294
+#: .\templates\index.html:328 .\templates\index.html:362
+msgid "Compare"
+msgstr "Taqqoslash"
+
+#: .\templates\index.html:127 .\templates\index.html:161
+msgid "Piqué Biker Jacket"
+msgstr "Pique biker ko'ylagi"
+
+#: .\templates\index.html:128 .\templates\index.html:162
+#: .\templates\index.html:197 .\templates\index.html:231
+#: .\templates\index.html:265 .\templates\index.html:300
+#: .\templates\index.html:334 .\templates\index.html:368
+msgid "+ Add To Cart"
+msgstr "+ Savatga qo'shish"
+
+#: .\templates\index.html:188 .\templates\index.html:291
+msgid "Sale"
+msgstr "Sotish"
+
+#: .\templates\index.html:196
+msgid "Multi-pocket Chest Bag"
+msgstr "Ko'p cho'ntakli ko'krak sumkasi"
+
+#: .\templates\index.html:230
+msgid "Diagonal Textured Cap"
+msgstr "Diagonal teksturali qopqoq"
+
+#: .\templates\index.html:264
+msgid "Lether Backpack"
+msgstr "Charm xalta"
+
+#: .\templates\index.html:299
+msgid "Ankle Boots"
+msgstr "Etiklar"
+
+#: .\templates\index.html:333
+msgid "T-shirt Contrast Pocket"
+msgstr ""
+
+#: .\templates\index.html:367
+msgid "Basic Flowing Scarf"
+msgstr "Futbolka kontrastli cho'ntak"
+
+#: .\templates\index.html:402
+#, fuzzy
+#| msgid "Summer Collection"
+msgid "Shoe Collection"
+msgstr "Yozgi to'plam"
+
+#: .\templates\index.html:402
+msgid " Accessories"
+msgstr "Aksessuarlar"
+
+#: .\templates\index.html:409
+msgid "Sale Of"
+msgstr "Chegismada"
+
+#: .\templates\index.html:416
+msgid "Deal Of The Week"
+msgstr "Haftaning bitimi"
+
+#: .\templates\index.html:417
+msgid "Multi-pocket Chest Bag Black"
+msgstr "Ko'p cho'ntakli qora"
+
+#~ msgid "Messages"
+#~ msgstr "Sahifalar"
+
+#~ msgid "and"
+#~ msgstr "brand"
+
+#~ msgid "Image"
+#~ msgstr "rasm"

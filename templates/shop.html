@@ -40,6 +40,7 @@
                                 </div>
                                 <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
                                     <div class="card-body">
+
                                         <div class="shop__sidebar__categories">
                                             <ul class="nice-scroll">
                                                 {% for category in categories %}
@@ -47,8 +48,10 @@
                                                     <a href="?cat={{ category.pk}}">{{ category.title}}</a>
                                                 </li>
                                                 {% endfor %}
+
                                             </ul>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
