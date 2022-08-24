@@ -1,7 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
-from django.views.generic import TemplateView
+from django.urls import reverse
+from django.views.generic import TemplateView, CreateView
+
+from pages.forms import ContactModelForm
 
 
 class HomeView(TemplateView):
@@ -9,3 +12,13 @@ class HomeView(TemplateView):
 
 class AboutView(TemplateView):
     template_name = 'about.html'
+
+
+def contact(request):
+    form = ContactModelForm
+    if request.method == "POST":
+        form = ContactModelForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('pages:contact')
+    return render(request, "contact.html")

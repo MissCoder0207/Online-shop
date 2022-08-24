@@ -1,8 +1,5 @@
-from email.policy import default
-from turtle import title
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from post.models import TagModel
 
 
 class ProductTagModel(models.Model):
@@ -40,7 +37,7 @@ class ProductModel(models.Model):
     image = models.ImageField(upload_to='product', verbose_name=_('image'))
     price = models.FloatField()
     # discount = models.models.PositiveIntegerField(default=0)
-    short_discription = models.TextField(default=0, verbose_name=_('short_discription'))
+    short_description = models.TextField(default=0, verbose_name=_('short_discription'))
     # long_discription = models.RichtextUploadField()
     category = models.ForeignKey(CategoryModel, on_delete=models.PROTECT, verbose_name=_('category'))
     brand = models.ForeignKey(BrandModul, on_delete=models.PROTECT, verbose_name=_('brand'))

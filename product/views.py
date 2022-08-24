@@ -1,6 +1,3 @@
-from django.shortcuts import render
-
-# Create your views here.
 from django.views.generic import TemplateView, ListView
 
 from product.models import ProductModel, CategoryModel, BrandModul, ProductTagModel
@@ -20,6 +17,9 @@ class ShopView(ListView):
 
         if q:
             qs = qs.filter(title__icontains=q)
+
+        if cat:
+            qs = qs.filter(category_id=cat)
 
         if brand:
             qs = qs.filter(brand_id=brand)

@@ -1,12 +1,25 @@
 from email import message
 from django.contrib import admin
+from modeltranslation.admin import TranslationAdmin
 
-from .models import PostModel, AuthorModel, TagModel
+from product.models import CategoryModel
+from .models import PostModel
 
-# Register your models here.
+class MyTranslationAdmin(TranslationAdmin):
+    class Media:
+        js = (
+            'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
+            'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js',
+            'modeltranslation/js/tabbed_translation_fields.js',
+        )
+        css = {
+            'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
+        }
 
-admin.site.register(PostModel)
-admin.site.register(AuthorModel)
-admin.site.register(TagModel)
+
+@admin.register(PostModel)
+class ProductModelAdmin(MyTranslationAdmin):
+    list_display = ['title', 'image', 'banner', 'author', 'tags', 'created_at']
+
 
 

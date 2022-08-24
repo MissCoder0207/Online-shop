@@ -65,7 +65,7 @@
                                             {% for brand in brands %}
                                             <ul>
                                                 <li>
-                                                    <a href="?brand={{ category.pk}}">{{ brand.title}}</a>
+                                                    <a href="?brand={{ brand.pk}}">{{ brand.title}}</a>
                                                 </li>
                                             </ul>
                                             {% endfor %}
@@ -85,7 +85,7 @@
                                             {% for tag in tags %}
                                             <ul>
                                                 <li>
-                                                    <a href="?tag={{ category.pk}}">{{ tag.title}}</a>
+                                                    <a href="?tag={{ tag.pk}}">{{ tag.name}}</a>
                                                 </li>
                                             </ul>
                                             {% endfor %}
