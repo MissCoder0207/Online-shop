@@ -1,47 +1,68 @@
-{% extends "registration/registration_base.html" %}
-{% load i18n %}
+{% extends 'registration/registrations_base.html'%}
+{% load static %}
+{% block content%}
+<div class="limiter">
+    <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+        <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
+            <form class="login100-form validate-form flex-sb flex-w">
+					<span class="login100-form-title p-b-53">
+						Sign In With
+					</span>
 
-{% block content %}
-<section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center mb-5">
-                <h2 class="heading-section">Login #08</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-5">
-                <div class="login-wrap p-4 p-md-5">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                        <span class="fa fa-user-o"></span>
-                    </div>
-                    <h3 class="text-center mb-4">Have an account?</h3>
-                    <form action="#" class="login-form">
-                        {% csrf_token%}
-                        <div class="form-group">
-                            <input type="text" class="form-control rounded-left" placeholder="Username" required>
-                        </div>
-                        <div class="form-group d-flex">
-                            <input type="password" class="form-control rounded-left" placeholder="Password" required>
-                        </div>
-                        <div class="form-group d-md-flex">
-                            <div class="w-50">
-                                <label class="checkbox-wrap checkbox-primary">Remember Me
-                                    <input type="checkbox" checked>
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="w-50 text-md-right">
-                                <a href="#">Forgot Password</a>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary rounded submit p-3 px-5">Get Started</button>
-                        </div>
-                    </form>
+                <a href="#" class="btn-face m-b-20">
+                    <i class="fa fa-facebook-official"></i>
+                    Facebook
+                </a>
+
+                <a href="#" class="btn-google m-b-20">
+                    <img src="images/icons/icon-google.png" alt="GOOGLE">
+                    Google
+                </a>
+
+                <div class="p-t-31 p-b-9">
+						<span class="txt1">
+							Username
+						</span>
                 </div>
-            </div>
+                <div class="wrap-input100 validate-input" data-validate="Username is required">
+                    <input class="input100" type="text" name="username">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="p-t-13 p-b-9">
+						<span class="txt1">
+							Password
+						</span>
+
+                    <a href="#" class="txt2 bo1 m-l-5">
+                        Forgot?
+                    </a>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <input class="input100" type="password" name="pass">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-login100-form-btn m-t-17">
+                    <button class="login100-form-btn">
+                        Sign In
+                    </button>
+                </div>
+
+                <div class="w-full text-center p-t-55">
+						<span class="txt2">
+							Not a member?
+						</span>
+
+                    <a href="#" class="txt2 bo1">
+                        Sign up now
+                    </a>
+                </div>
+            </form>
         </div>
     </div>
-</section>
+</div>
+
+
+<div id="dropDownSelect1"></div>
 {% endblock %}
